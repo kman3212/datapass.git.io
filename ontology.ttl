@@ -1,0 +1,166 @@
+@prefix : <https://digicities.info/ontologies/DataPass.owl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <https://digicities.info/ontologies/DataPass.owl#> .
+
+<https://digicities.info/ontologies/DataPass.owl> rdf:type owl:Ontology .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticweb.org/anjo/ontologies/2023/4/untitled-ontology-18#hasDataProperty
+<http://www.semanticweb.org/anjo/ontologies/2023/4/untitled-ontology-18#hasDataProperty> rdf:type owl:ObjectProperty ;
+                                                                                         rdfs:domain :columns ;
+                                                                                         rdfs:range :Property .
+
+
+###  http://www.semanticweb.org/anjo/ontologies/2023/4/untitled-ontology-18#hasDeviceDatasetType
+<http://www.semanticweb.org/anjo/ontologies/2023/4/untitled-ontology-18#hasDeviceDatasetType> rdf:type owl:ObjectProperty ;
+                                                                                              rdfs:domain <http://www.semanticweb.org/anjo/ontologies/2023/4/untitled-ontology-18#Device> ;
+                                                                                              rdfs:range :Dataset .
+
+
+###  https://digicities.info/ontologies/DataPass.owl#hasColumns
+:hasColumns rdf:type owl:ObjectProperty ;
+            rdfs:domain :Dataset ;
+            rdfs:range :columns .
+
+
+###  https://digicities.info/ontologies/DataPass.owl#hasDataSet
+:hasDataSet rdf:type owl:ObjectProperty ;
+            rdfs:domain :Search_Term ;
+            rdfs:range :Dataset .
+
+
+###  https://digicities.info/ontologies/DataPass.owl#hasIoTDataProperty
+:hasIoTDataProperty rdf:type owl:ObjectProperty ;
+                    rdfs:domain <http://www.semanticweb.org/anjo/ontologies/2023/4/untitled-ontology-18#Device> ;
+                    rdfs:range :Property .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  https://digicities.info/ontologies/DataPass.owl#hasIoTData
+:hasIoTData rdf:type owl:DatatypeProperty ;
+            rdfs:domain :Property ;
+            rdfs:range rdfs:Literal .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/anjo/ontologies/2023/4/untitled-ontology-18#Device
+<http://www.semanticweb.org/anjo/ontologies/2023/4/untitled-ontology-18#Device> rdf:type owl:Class .
+
+
+###  https://digicities.info/ontologies/DataPass.owl#Dataset
+:Dataset rdf:type owl:Class .
+
+
+###  https://digicities.info/ontologies/DataPass.owl#Energy_Consumtion
+:Energy_Consumtion rdf:type owl:Class ;
+                   rdfs:subClassOf :Dataset ;
+                   owl:disjointWith :Energy_Generation .
+
+
+###  https://digicities.info/ontologies/DataPass.owl#Energy_Generation
+:Energy_Generation rdf:type owl:Class ;
+                   rdfs:subClassOf :Dataset .
+
+
+###  https://digicities.info/ontologies/DataPass.owl#Irradiation
+:Irradiation rdf:type owl:Class ;
+             rdfs:subClassOf :Property .
+
+
+###  https://digicities.info/ontologies/DataPass.owl#Property
+:Property rdf:type owl:Class .
+
+
+###  https://digicities.info/ontologies/DataPass.owl#Search_Term
+:Search_Term rdf:type owl:Class .
+
+
+###  https://digicities.info/ontologies/DataPass.owl#Smart_Meter
+:Smart_Meter rdf:type owl:Class ;
+             rdfs:subClassOf <http://www.semanticweb.org/anjo/ontologies/2023/4/untitled-ontology-18#Device> .
+
+
+###  https://digicities.info/ontologies/DataPass.owl#Solar_Panel
+:Solar_Panel rdf:type owl:Class ;
+             rdfs:subClassOf <http://www.semanticweb.org/anjo/ontologies/2023/4/untitled-ontology-18#Device> .
+
+
+###  https://digicities.info/ontologies/DataPass.owl#Weather
+:Weather rdf:type owl:Class ;
+         rdfs:subClassOf :Property .
+
+
+###  https://digicities.info/ontologies/DataPass.owl#Weather_Sensor
+:Weather_Sensor rdf:type owl:Class ;
+                rdfs:subClassOf <http://www.semanticweb.org/anjo/ontologies/2023/4/untitled-ontology-18#Device> .
+
+
+###  https://digicities.info/ontologies/DataPass.owl#columns
+:columns rdf:type owl:Class ;
+         rdfs:subClassOf :Energy_Consumtion ,
+                         :Energy_Generation .
+
+
+###  https://digicities.info/ontologies/DataPass.owl#humidity
+:humidity rdf:type owl:Class ;
+          rdfs:subClassOf :Property .
+
+
+###  https://digicities.info/ontologies/DataPass.owl#kWh
+:kWh rdf:type owl:Class ;
+     rdfs:subClassOf :Property .
+
+
+###  https://digicities.info/ontologies/DataPass.owl#pressure
+:pressure rdf:type owl:Class ;
+          rdfs:subClassOf :Property .
+
+
+###  https://digicities.info/ontologies/DataPass.owl#temperature
+:temperature rdf:type owl:Class ;
+             rdfs:subClassOf :Property .
+
+
+###  https://digicities.info/ontologies/DataPass.owl#yield
+:yield rdf:type owl:Class ;
+       rdfs:subClassOf :Property .
+
+
+#################################################################
+#    General axioms
+#################################################################
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :Irradiation
+                :Weather
+                :humidity
+                :kWh
+                :pressure
+                :temperature
+                :yield
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :Smart_Meter
+                :Solar_Panel
+                :Weather_Sensor
+              )
+] .
+
+
+###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

@@ -1,0 +1,170 @@
+<https://digicities.info/ontologies/DataPass.owl> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/anjo/ontologies/2023/4/untitled-ontology-18#hasDataProperty
+<http://www.semanticweb.org/anjo/ontologies/2023/4/untitled-ontology-18#hasDataProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/anjo/ontologies/2023/4/untitled-ontology-18#hasDataProperty> <http://www.w3.org/2000/01/rdf-schema#domain> <https://digicities.info/ontologies/DataPass.owl#columns> .
+<http://www.semanticweb.org/anjo/ontologies/2023/4/untitled-ontology-18#hasDataProperty> <http://www.w3.org/2000/01/rdf-schema#range> <https://digicities.info/ontologies/DataPass.owl#Property> .
+# 
+# http://www.semanticweb.org/anjo/ontologies/2023/4/untitled-ontology-18#hasDeviceDatasetType
+<http://www.semanticweb.org/anjo/ontologies/2023/4/untitled-ontology-18#hasDeviceDatasetType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/anjo/ontologies/2023/4/untitled-ontology-18#hasDeviceDatasetType> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/anjo/ontologies/2023/4/untitled-ontology-18#Device> .
+<http://www.semanticweb.org/anjo/ontologies/2023/4/untitled-ontology-18#hasDeviceDatasetType> <http://www.w3.org/2000/01/rdf-schema#range> <https://digicities.info/ontologies/DataPass.owl#Dataset> .
+# 
+# https://digicities.info/ontologies/DataPass.owl#hasColumns
+<https://digicities.info/ontologies/DataPass.owl#hasColumns> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://digicities.info/ontologies/DataPass.owl#hasColumns> <http://www.w3.org/2000/01/rdf-schema#domain> <https://digicities.info/ontologies/DataPass.owl#Dataset> .
+<https://digicities.info/ontologies/DataPass.owl#hasColumns> <http://www.w3.org/2000/01/rdf-schema#range> <https://digicities.info/ontologies/DataPass.owl#columns> .
+# 
+# https://digicities.info/ontologies/DataPass.owl#hasDataSet
+<https://digicities.info/ontologies/DataPass.owl#hasDataSet> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://digicities.info/ontologies/DataPass.owl#hasDataSet> <http://www.w3.org/2000/01/rdf-schema#domain> <https://digicities.info/ontologies/DataPass.owl#Search_Term> .
+<https://digicities.info/ontologies/DataPass.owl#hasDataSet> <http://www.w3.org/2000/01/rdf-schema#range> <https://digicities.info/ontologies/DataPass.owl#Dataset> .
+# 
+# https://digicities.info/ontologies/DataPass.owl#hasIoTDataProperty
+<https://digicities.info/ontologies/DataPass.owl#hasIoTDataProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://digicities.info/ontologies/DataPass.owl#hasIoTDataProperty> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/anjo/ontologies/2023/4/untitled-ontology-18#Device> .
+<https://digicities.info/ontologies/DataPass.owl#hasIoTDataProperty> <http://www.w3.org/2000/01/rdf-schema#range> <https://digicities.info/ontologies/DataPass.owl#Property> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# https://digicities.info/ontologies/DataPass.owl#hasIoTData
+<https://digicities.info/ontologies/DataPass.owl#hasIoTData> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://digicities.info/ontologies/DataPass.owl#hasIoTData> <http://www.w3.org/2000/01/rdf-schema#domain> <https://digicities.info/ontologies/DataPass.owl#Property> .
+<https://digicities.info/ontologies/DataPass.owl#hasIoTData> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/anjo/ontologies/2023/4/untitled-ontology-18#Device
+<http://www.semanticweb.org/anjo/ontologies/2023/4/untitled-ontology-18#Device> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://digicities.info/ontologies/DataPass.owl#Dataset
+<https://digicities.info/ontologies/DataPass.owl#Dataset> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://digicities.info/ontologies/DataPass.owl#Energy_Consumtion
+<https://digicities.info/ontologies/DataPass.owl#Energy_Consumtion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://digicities.info/ontologies/DataPass.owl#Energy_Consumtion> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://digicities.info/ontologies/DataPass.owl#Dataset> .
+<https://digicities.info/ontologies/DataPass.owl#Energy_Consumtion> <http://www.w3.org/2002/07/owl#disjointWith> <https://digicities.info/ontologies/DataPass.owl#Energy_Generation> .
+# 
+# https://digicities.info/ontologies/DataPass.owl#Energy_Generation
+<https://digicities.info/ontologies/DataPass.owl#Energy_Generation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://digicities.info/ontologies/DataPass.owl#Energy_Generation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://digicities.info/ontologies/DataPass.owl#Dataset> .
+# 
+# https://digicities.info/ontologies/DataPass.owl#Irradiation
+<https://digicities.info/ontologies/DataPass.owl#Irradiation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://digicities.info/ontologies/DataPass.owl#Irradiation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://digicities.info/ontologies/DataPass.owl#Property> .
+# 
+# https://digicities.info/ontologies/DataPass.owl#Property
+<https://digicities.info/ontologies/DataPass.owl#Property> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://digicities.info/ontologies/DataPass.owl#Search_Term
+<https://digicities.info/ontologies/DataPass.owl#Search_Term> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://digicities.info/ontologies/DataPass.owl#Smart_Meter
+<https://digicities.info/ontologies/DataPass.owl#Smart_Meter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://digicities.info/ontologies/DataPass.owl#Smart_Meter> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/anjo/ontologies/2023/4/untitled-ontology-18#Device> .
+# 
+# https://digicities.info/ontologies/DataPass.owl#Solar_Panel
+<https://digicities.info/ontologies/DataPass.owl#Solar_Panel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://digicities.info/ontologies/DataPass.owl#Solar_Panel> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/anjo/ontologies/2023/4/untitled-ontology-18#Device> .
+# 
+# https://digicities.info/ontologies/DataPass.owl#Weather
+<https://digicities.info/ontologies/DataPass.owl#Weather> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://digicities.info/ontologies/DataPass.owl#Weather> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://digicities.info/ontologies/DataPass.owl#Property> .
+# 
+# https://digicities.info/ontologies/DataPass.owl#Weather_Sensor
+<https://digicities.info/ontologies/DataPass.owl#Weather_Sensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://digicities.info/ontologies/DataPass.owl#Weather_Sensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/anjo/ontologies/2023/4/untitled-ontology-18#Device> .
+# 
+# https://digicities.info/ontologies/DataPass.owl#columns
+<https://digicities.info/ontologies/DataPass.owl#columns> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://digicities.info/ontologies/DataPass.owl#columns> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://digicities.info/ontologies/DataPass.owl#Energy_Consumtion> .
+<https://digicities.info/ontologies/DataPass.owl#columns> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://digicities.info/ontologies/DataPass.owl#Energy_Generation> .
+# 
+# https://digicities.info/ontologies/DataPass.owl#humidity
+<https://digicities.info/ontologies/DataPass.owl#humidity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://digicities.info/ontologies/DataPass.owl#humidity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://digicities.info/ontologies/DataPass.owl#Property> .
+# 
+# https://digicities.info/ontologies/DataPass.owl#kWh
+<https://digicities.info/ontologies/DataPass.owl#kWh> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://digicities.info/ontologies/DataPass.owl#kWh> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://digicities.info/ontologies/DataPass.owl#Property> .
+# 
+# https://digicities.info/ontologies/DataPass.owl#pressure
+<https://digicities.info/ontologies/DataPass.owl#pressure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://digicities.info/ontologies/DataPass.owl#pressure> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://digicities.info/ontologies/DataPass.owl#Property> .
+# 
+# https://digicities.info/ontologies/DataPass.owl#temperature
+<https://digicities.info/ontologies/DataPass.owl#temperature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://digicities.info/ontologies/DataPass.owl#temperature> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://digicities.info/ontologies/DataPass.owl#Property> .
+# 
+# https://digicities.info/ontologies/DataPass.owl#yield
+<https://digicities.info/ontologies/DataPass.owl#yield> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://digicities.info/ontologies/DataPass.owl#yield> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://digicities.info/ontologies/DataPass.owl#Property> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    General axioms
+# #
+# #################################################################
+# 
+# 
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid1 <http://www.w3.org/2002/07/owl#members> _:genid8 .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid7 .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid6 .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid5 .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid4 .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid3 .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid2 .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://digicities.info/ontologies/DataPass.owl#yield> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://digicities.info/ontologies/DataPass.owl#temperature> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://digicities.info/ontologies/DataPass.owl#pressure> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://digicities.info/ontologies/DataPass.owl#kWh> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://digicities.info/ontologies/DataPass.owl#humidity> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://digicities.info/ontologies/DataPass.owl#Weather> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://digicities.info/ontologies/DataPass.owl#Irradiation> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+# 
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid9 <http://www.w3.org/2002/07/owl#members> _:genid12 .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid11 .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid10 .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://digicities.info/ontologies/DataPass.owl#Weather_Sensor> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://digicities.info/ontologies/DataPass.owl#Solar_Panel> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://digicities.info/ontologies/DataPass.owl#Smart_Meter> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+# 
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

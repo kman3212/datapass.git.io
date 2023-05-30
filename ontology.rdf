@@ -1,0 +1,291 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://digicities.info/ontologies/DataPass.owl#"
+     xml:base="https://digicities.info/ontologies/DataPass.owl"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="https://digicities.info/ontologies/DataPass.owl"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.semanticweb.org/anjo/ontologies/2023/4/untitled-ontology-18#hasDataProperty -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/anjo/ontologies/2023/4/untitled-ontology-18#hasDataProperty">
+        <rdfs:domain rdf:resource="https://digicities.info/ontologies/DataPass.owl#columns"/>
+        <rdfs:range rdf:resource="https://digicities.info/ontologies/DataPass.owl#Property"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/anjo/ontologies/2023/4/untitled-ontology-18#hasDeviceDatasetType -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/anjo/ontologies/2023/4/untitled-ontology-18#hasDeviceDatasetType">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/anjo/ontologies/2023/4/untitled-ontology-18#Device"/>
+        <rdfs:range rdf:resource="https://digicities.info/ontologies/DataPass.owl#Dataset"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://digicities.info/ontologies/DataPass.owl#hasColumns -->
+
+
+    <owl:ObjectProperty rdf:about="https://digicities.info/ontologies/DataPass.owl#hasColumns">
+        <rdfs:domain rdf:resource="https://digicities.info/ontologies/DataPass.owl#Dataset"/>
+        <rdfs:range rdf:resource="https://digicities.info/ontologies/DataPass.owl#columns"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://digicities.info/ontologies/DataPass.owl#hasDataSet -->
+
+
+    <owl:ObjectProperty rdf:about="https://digicities.info/ontologies/DataPass.owl#hasDataSet">
+        <rdfs:domain rdf:resource="https://digicities.info/ontologies/DataPass.owl#Search_Term"/>
+        <rdfs:range rdf:resource="https://digicities.info/ontologies/DataPass.owl#Dataset"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://digicities.info/ontologies/DataPass.owl#hasIoTDataProperty -->
+
+
+    <owl:ObjectProperty rdf:about="https://digicities.info/ontologies/DataPass.owl#hasIoTDataProperty">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/anjo/ontologies/2023/4/untitled-ontology-18#Device"/>
+        <rdfs:range rdf:resource="https://digicities.info/ontologies/DataPass.owl#Property"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://digicities.info/ontologies/DataPass.owl#hasIoTData -->
+
+
+    <owl:DatatypeProperty rdf:about="https://digicities.info/ontologies/DataPass.owl#hasIoTData">
+        <rdfs:domain rdf:resource="https://digicities.info/ontologies/DataPass.owl#Property"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.semanticweb.org/anjo/ontologies/2023/4/untitled-ontology-18#Device -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anjo/ontologies/2023/4/untitled-ontology-18#Device"/>
+    
+
+
+    <!-- https://digicities.info/ontologies/DataPass.owl#Dataset -->
+
+
+    <owl:Class rdf:about="https://digicities.info/ontologies/DataPass.owl#Dataset"/>
+    
+
+
+    <!-- https://digicities.info/ontologies/DataPass.owl#Energy_Consumtion -->
+
+
+    <owl:Class rdf:about="https://digicities.info/ontologies/DataPass.owl#Energy_Consumtion">
+        <rdfs:subClassOf rdf:resource="https://digicities.info/ontologies/DataPass.owl#Dataset"/>
+        <owl:disjointWith rdf:resource="https://digicities.info/ontologies/DataPass.owl#Energy_Generation"/>
+    </owl:Class>
+    
+
+
+    <!-- https://digicities.info/ontologies/DataPass.owl#Energy_Generation -->
+
+
+    <owl:Class rdf:about="https://digicities.info/ontologies/DataPass.owl#Energy_Generation">
+        <rdfs:subClassOf rdf:resource="https://digicities.info/ontologies/DataPass.owl#Dataset"/>
+    </owl:Class>
+    
+
+
+    <!-- https://digicities.info/ontologies/DataPass.owl#Irradiation -->
+
+
+    <owl:Class rdf:about="https://digicities.info/ontologies/DataPass.owl#Irradiation">
+        <rdfs:subClassOf rdf:resource="https://digicities.info/ontologies/DataPass.owl#Property"/>
+    </owl:Class>
+    
+
+
+    <!-- https://digicities.info/ontologies/DataPass.owl#Property -->
+
+
+    <owl:Class rdf:about="https://digicities.info/ontologies/DataPass.owl#Property"/>
+    
+
+
+    <!-- https://digicities.info/ontologies/DataPass.owl#Search_Term -->
+
+
+    <owl:Class rdf:about="https://digicities.info/ontologies/DataPass.owl#Search_Term"/>
+    
+
+
+    <!-- https://digicities.info/ontologies/DataPass.owl#Smart_Meter -->
+
+
+    <owl:Class rdf:about="https://digicities.info/ontologies/DataPass.owl#Smart_Meter">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anjo/ontologies/2023/4/untitled-ontology-18#Device"/>
+    </owl:Class>
+    
+
+
+    <!-- https://digicities.info/ontologies/DataPass.owl#Solar_Panel -->
+
+
+    <owl:Class rdf:about="https://digicities.info/ontologies/DataPass.owl#Solar_Panel">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anjo/ontologies/2023/4/untitled-ontology-18#Device"/>
+    </owl:Class>
+    
+
+
+    <!-- https://digicities.info/ontologies/DataPass.owl#Weather -->
+
+
+    <owl:Class rdf:about="https://digicities.info/ontologies/DataPass.owl#Weather">
+        <rdfs:subClassOf rdf:resource="https://digicities.info/ontologies/DataPass.owl#Property"/>
+    </owl:Class>
+    
+
+
+    <!-- https://digicities.info/ontologies/DataPass.owl#Weather_Sensor -->
+
+
+    <owl:Class rdf:about="https://digicities.info/ontologies/DataPass.owl#Weather_Sensor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anjo/ontologies/2023/4/untitled-ontology-18#Device"/>
+    </owl:Class>
+    
+
+
+    <!-- https://digicities.info/ontologies/DataPass.owl#columns -->
+
+
+    <owl:Class rdf:about="https://digicities.info/ontologies/DataPass.owl#columns">
+        <rdfs:subClassOf rdf:resource="https://digicities.info/ontologies/DataPass.owl#Energy_Consumtion"/>
+        <rdfs:subClassOf rdf:resource="https://digicities.info/ontologies/DataPass.owl#Energy_Generation"/>
+    </owl:Class>
+    
+
+
+    <!-- https://digicities.info/ontologies/DataPass.owl#humidity -->
+
+
+    <owl:Class rdf:about="https://digicities.info/ontologies/DataPass.owl#humidity">
+        <rdfs:subClassOf rdf:resource="https://digicities.info/ontologies/DataPass.owl#Property"/>
+    </owl:Class>
+    
+
+
+    <!-- https://digicities.info/ontologies/DataPass.owl#kWh -->
+
+
+    <owl:Class rdf:about="https://digicities.info/ontologies/DataPass.owl#kWh">
+        <rdfs:subClassOf rdf:resource="https://digicities.info/ontologies/DataPass.owl#Property"/>
+    </owl:Class>
+    
+
+
+    <!-- https://digicities.info/ontologies/DataPass.owl#pressure -->
+
+
+    <owl:Class rdf:about="https://digicities.info/ontologies/DataPass.owl#pressure">
+        <rdfs:subClassOf rdf:resource="https://digicities.info/ontologies/DataPass.owl#Property"/>
+    </owl:Class>
+    
+
+
+    <!-- https://digicities.info/ontologies/DataPass.owl#temperature -->
+
+
+    <owl:Class rdf:about="https://digicities.info/ontologies/DataPass.owl#temperature">
+        <rdfs:subClassOf rdf:resource="https://digicities.info/ontologies/DataPass.owl#Property"/>
+    </owl:Class>
+    
+
+
+    <!-- https://digicities.info/ontologies/DataPass.owl#yield -->
+
+
+    <owl:Class rdf:about="https://digicities.info/ontologies/DataPass.owl#yield">
+        <rdfs:subClassOf rdf:resource="https://digicities.info/ontologies/DataPass.owl#Property"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://digicities.info/ontologies/DataPass.owl#Irradiation"/>
+            <rdf:Description rdf:about="https://digicities.info/ontologies/DataPass.owl#Weather"/>
+            <rdf:Description rdf:about="https://digicities.info/ontologies/DataPass.owl#humidity"/>
+            <rdf:Description rdf:about="https://digicities.info/ontologies/DataPass.owl#kWh"/>
+            <rdf:Description rdf:about="https://digicities.info/ontologies/DataPass.owl#pressure"/>
+            <rdf:Description rdf:about="https://digicities.info/ontologies/DataPass.owl#temperature"/>
+            <rdf:Description rdf:about="https://digicities.info/ontologies/DataPass.owl#yield"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://digicities.info/ontologies/DataPass.owl#Smart_Meter"/>
+            <rdf:Description rdf:about="https://digicities.info/ontologies/DataPass.owl#Solar_Panel"/>
+            <rdf:Description rdf:about="https://digicities.info/ontologies/DataPass.owl#Weather_Sensor"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/ -->
+
+
